@@ -1,0 +1,18 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %title App
+    %meta{:charset => "utf-8"}
+    %script{:src => "/vendor/jquery/jquery-min.js"}
+    %script{:src => "/vendor/underscore/underscore-min.js"}
+    %script{:src => "/vendor/backbone/backbone-min.js"}
+    %link{:rel => "stylesheet", :href => "/styles/kube101/css/kube.css"}
+    %link{:rel => "stylesheet", :href => "/styles/app.css"}
+    %script{:src => "/scripts/app.js"}
+  %body
+    .row
+      .half.centered
+        %header
+          = partial :header
+        %section#content
+          = yield
