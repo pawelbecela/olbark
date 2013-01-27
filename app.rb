@@ -6,6 +6,9 @@ require 'pony'
 
 class App < Sinatra::Base
   register Sinatra::Partial
+  
+  # enable :sessions
+  #   use Rack::Flash, :sweep => true
 
   set :views, "app/views"
   set :haml, { :format => :html5 }
@@ -13,8 +16,9 @@ class App < Sinatra::Base
   enable :partial_underscores
 
   helpers do
-    # container for helpers
-    # that can be used inside views
+    # def flash_types
+    #     [:success, :notice, :warning, :error]
+    #   end
   end
 
   get '/' do
@@ -33,14 +37,14 @@ class App < Sinatra::Base
     haml :contact
   end
   
-  get '/form' do
-    erb :form
+  get '/' do
+    erb :layout
   end
   
-  post '/form' do  
+  post '/' do  
     Pony.mail({
       :to => 'pawbecela@gmail.com',
-      :body => "#{params[:message]}, #{params[:email]}",
+      :body => "Wiadomosc od: #{params[:email]}, o tresci: #{params[:body]}",
       :via => :smtp,
       :via_options => {
         :address              => 'smtp.gmail.com',
@@ -52,6 +56,8 @@ class App < Sinatra::Base
         :domain               => "localhost.localdomain" # the HELO domain provided by the client to the server
       }
     })
-    'email sent'
+    
+    # flash[:success] = "Huj"
+    redirect '/'
   end
 end

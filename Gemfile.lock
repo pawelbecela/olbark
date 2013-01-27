@@ -24,6 +24,8 @@ GEM
     pony (1.4)
       mail (> 2.0)
     rack (1.4.0)
+    rack-flash (0.1.2)
+      rack
     rack-protection (1.2.0)
       rack
     rack-test (0.6.1)
@@ -52,6 +54,7 @@ DEPENDENCIES
   guard
   haml (= 3.1.4)
   pony
+  rack-flash
   rack-test
   rake
   rerun

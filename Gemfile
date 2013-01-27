@@ -5,6 +5,7 @@ gem 'sinatra-partial', '0.3.1'
 gem 'haml', '3.1.4'
 gem 'rake'
 gem 'pony'
+gem 'rack-flash'
 
 group :development do
   gem "guard"
