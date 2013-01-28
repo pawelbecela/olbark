@@ -10,6 +10,8 @@ h2, h3 { font-weight: normal; }
 
 iframe { width: 1100px; height: 500px; }
 
+li textarea { resize: none; }
+
 p#quote { font-weight: bold; font-style: italic; font-size: 35px; font-family: "Courier"; text-align: center; color: #333333; margin-bottom: 0px; }
 
 #intro.inner { background-color: #e9e6da; }

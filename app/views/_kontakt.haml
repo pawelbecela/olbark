@@ -13,7 +13,10 @@
               %input{:type => "text", :name => "email", :size => "40"}
             %li
               %label{:for => "body", :class => "bold"}Wiadomość
-              %input{:type => "text", :name => "body", :size => "40"}
+              %textarea{:name => "body", :rows => 5, :cols => 38}
+            %li
+              %label{:for => "phone", :class => "bold"}Telefon
+              %input{:type => "text", :name => "phone", :size => "40"}
           %input{:type => "submit", :class => "btn btn-round", :value => "Wyslij"}
     .half
       %h3 Olbark
