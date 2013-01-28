@@ -25,16 +25,16 @@ class App < Sinatra::Base
     haml :index
   end
   
-  get '/about' do
-    haml :about
+  get '/onas' do
+    haml :_onas
   end
 
-  get '/offer' do
-    haml :offer
+  get '/oferta' do
+    haml :_oferta
   end
   
-  get '/contact' do
-    haml :contact
+  get '/kontakt' do
+    haml :_kontakt
   end
   
   get '/' do
