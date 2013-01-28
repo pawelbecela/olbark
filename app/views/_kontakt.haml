@@ -2,7 +2,13 @@
   %img{:src => '/images/kontakt.jpg'}
 #intro.inner
   .row
-    .third
+    %h3 Dojazd
+    %a(href="https://maps.google.pl/maps?q=Fryderyka+Chopina,+44-230+Czerwionka-Leszczyny,+rybnicki,+%C5%9Bl%C4%85skie&amp;hl=pl&amp;ie=UTF8&amp;sll=50.299867,19.006348&amp;sspn=1.382508,2.883911&amp;geocode=FWcN_QIdxU0cAQ&amp;hnear=Fryderyka+Chopina,+44-230+Czerwionka-Leszczyny,+rybnicki,+%C5%9Bl%C4%85skie&amp;t=m&amp;hq=&amp;z=14&amp;ll=50.138471,18.632133&amp;source=embed")
+      %h4.subheader Wyświetl większą mapę
+    %fieldset
+      %iframe{:src => "https://maps.google.pl/maps?q=Fryderyka+Chopina,+44-230+Czerwionka-Leszczyny,+rybnicki,+%C5%9Bl%C4%85skie&ie=UTF8&hq=&hnear=Fryderyka+Chopina,+44-230+Czerwionka-Leszczyny,+rybnicki,+%C5%9Bl%C4%85skie&ll=50.138471,18.632133&spn=0.008032,0.01929&t=m&z=14&output=embed"}
+  .row
+    .half
       %h3 mgr inż. Arkadiusz Olborski
       %h4.subheader Tel: +48 503 415 138       
       %form{:action => "/", :method => "post", :class => "forms"}
@@ -15,7 +21,7 @@
               %label{:for => "body", :class => "bold"}Wiadomość
               %input{:type => "text", :name => "body", :size => "40"}
           %input{:type => "submit", :class => "btn btn-round", :value => "Wyslij"}
-    .third
+    .half
       %h3 Olbark
       %h4.subheader Usługi inżynieryjne i doradztwo
       %fieldset
@@ -25,9 +31,3 @@
         %br
         %h5 NIP: 642-291-43-23
         %br
-    .third
-      %h3 Dojazd
-      %a(href="https://maps.google.pl/maps?q=Fryderyka+Chopina,+44-230+Czerwionka-Leszczyny,+rybnicki,+%C5%9Bl%C4%85skie&amp;hl=pl&amp;ie=UTF8&amp;sll=50.299867,19.006348&amp;sspn=1.382508,2.883911&amp;geocode=FWcN_QIdxU0cAQ&amp;hnear=Fryderyka+Chopina,+44-230+Czerwionka-Leszczyny,+rybnicki,+%C5%9Bl%C4%85skie&amp;t=m&amp;hq=&amp;z=14&amp;ll=50.138471,18.632133&amp;source=embed")
-      %h4.subheader Wyświetl większą mapę
-      %fieldset
-        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.pl/maps?q=Fryderyka+Chopina,+44-230+Czerwionka-Leszczyny,+rybnicki,+%C5%9Bl%C4%85skie&amp;hl=pl&amp;ie=UTF8&amp;sll=50.299867,19.006348&amp;sspn=1.382508,2.883911&amp;geocode=FWcN_QIdxU0cAQ&amp;hnear=Fryderyka+Chopina,+44-230+Czerwionka-Leszczyny,+rybnicki,+%C5%9Bl%C4%85skie&amp;t=m&amp;hq=&amp;z=14&amp;ll=50.138471,18.632133&amp;output=embed"></iframe>
