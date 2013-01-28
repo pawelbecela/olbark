@@ -14,15 +14,4 @@
       #header.group
         %header
           = partial :header
-        %section#content
-          = yield
-        / %ul#intro.block-three
-        /           %li
-        /             .inner
-        /               = partial :onas   
-        /           %li
-        /             .inner
-        /               = partial :oferta
-        /           %li
-        /             .inner
-        /               = partial :kontakt
+        = yield

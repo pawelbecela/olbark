@@ -6,7 +6,9 @@ a { text-decoration: none; }
 
 h2, h3 { font-weight: normal; }
 
-p#quote { font-weight: bold; font-style: italic; font-size: 35px; font-family: "Courier"; text-align: center; }
+#promo { margin-bottom: 3em; }
+
+p#quote { font-weight: bold; font-style: italic; font-size: 35px; font-family: "Courier"; text-align: center; color: #333333; margin-bottom: 0px; }
 
 #intro.inner { background-color: #e9e6da; }
 
