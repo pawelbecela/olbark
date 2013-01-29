@@ -17,11 +17,12 @@
             %li
               %label{:for => "phone", :class => "bold"}Telefon
               %input{:type => "text", :name => "phone", :size => "40"}
-          %input{:type => "submit", :class => "btn btn-round", :value => "Wyslij"}
+          %input{:type => "submit", :class => "btn btn-round", :value => "Wyślij"}
     .half
-      %h3 Olbark
+      %h3 "Olbark"
       %h4.subheader Usługi inżynieryjne i doradztwo
-      %fieldset
+      %fieldset#address
+        %br
         %h5 44-238 Czerwionka-Leszczyny
         %h5 ul. Chopina 4A /7
         %h5 Polska
@@ -30,7 +31,7 @@
   .row
     %h3 Dojazd
     %a(href="https://maps.google.pl/maps?q=Fryderyka+Chopina,+44-230+Czerwionka-Leszczyny,+rybnicki,+%C5%9Bl%C4%85skie&amp;hl=pl&amp;ie=UTF8&amp;sll=50.299867,19.006348&amp;sspn=1.382508,2.883911&amp;geocode=FWcN_QIdxU0cAQ&amp;hnear=Fryderyka+Chopina,+44-230+Czerwionka-Leszczyny,+rybnicki,+%C5%9Bl%C4%85skie&amp;t=m&amp;hq=&amp;z=14&amp;ll=50.138471,18.632133&amp;source=embed")
-      %h4.subheader Wyświetl większą mapę
+      %h4.subheader Wyświetl mapę w nowym oknie
     %fieldset
       %iframe{:src => "https://maps.google.pl/maps?q=Fryderyka+Chopina,+44-230+Czerwionka-Leszczyny,+rybnicki,+%C5%9Bl%C4%85skie&ie=UTF8&hq=&hnear=Fryderyka+Chopina,+44-230+Czerwionka-Leszczyny,+rybnicki,+%C5%9Bl%C4%85skie&ll=50.138471,18.632133&spn=0.008032,0.01929&t=m&z=14&output=embed"}
 
