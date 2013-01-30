@@ -34,7 +34,7 @@ img, #feedback, #banner, #intro li { border-radius: 3px; }
 /* =Header */
 #header { text-decoration: none; padding-top: 30px; margin-bottom: 0.6em; }
 #header h1 { float: left; font-size: 32px; margin-top: 1px; margin-bottom: 0; color: rgba(0, 0, 0, 0.8); }
-#header nav { margin-top: 1.2em; float: right; }
+#header nav { margin-top: 5em; float: right; }
 #header nav ul { margin: 0; list-style: none; overflow: hidden; text-transform: uppercase; font-family: "Courier"; font-size: 32px; }
 #header nav ul li { float: left; margin-left: 2em; }
 #header nav ul li a { text-decoration: none; color: black; color: rgba(0, 0, 0, 0.8); }
