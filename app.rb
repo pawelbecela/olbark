@@ -43,7 +43,7 @@ class App < Sinatra::Base
   
   post '/' do  
     Pony.mail({
-      :to => 'pawbecela@gmail.com',
+      :to => 'arkadiusz.olborski.olbark@gmail.com',
       :body => "Wiadomosc od: #{params[:email]}, o tresci: #{params[:body]}. Telefon: #{params[:phone]}",
       :via => :smtp,
       :via_options => {
@@ -51,13 +51,11 @@ class App < Sinatra::Base
         :port                 => '587',
         :enable_starttls_auto => true,
         :user_name            => 'arkadiusz.olborski.olbark@gmail.com',
-        :password             => 'olbark123456',
+        :password             => ENV['PASSWORD'],
         :authentication       => :plain, # :plain, :login, :cram_md5, no auth by default
         :domain               => "localhost.localdomain" # the HELO domain provided by the client to the server
       }
     })
-    
-    # flash[:success] = "Huj"
     redirect '/'
   end
 end
