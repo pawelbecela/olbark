@@ -1,4 +1,4 @@
-body { background-image: url(/images/kontakt1.jpg); font-family: "Courier"; }
+body { background-image: url(/images/index1.jpg); font-family: "Courier"; }
 
 a { text-decoration: none; }
 
@@ -21,7 +21,7 @@ p#quote { font-weight: bold; font-style: italic; font-size: 33px; font-family: "
 .footer { text-align: center; margin-bottom: 20px; }
 .footer h2 { font-size: 60px; }
 
-#intro.inner { background-color: rgba(233, 230, 218, 0.5); }
+#intro.inner { background-color: rgba(233, 230, 218, 0.9); }
 
 /* =Common ----------------------------------------------------------------------------- */
 img, #feedback, #banner, #intro li { border-radius: 3px; }
@@ -62,7 +62,7 @@ img, #feedback, #banner, #intro li { border-radius: 3px; }
 #partners h4 { color: #666666; }
 
 /* =Footer ----------------------------------------------------------------------------- */
-#footer { text-align: center; margin-top: 3em; padding-bottom: 20px; font-size: 0.9em; padding-top: 3em; background-color: rgba(233, 230, 218, 0.5); overflow: hidden; box-shadow: 0 2px 4px #bbbbbb inset; }
+#footer { text-align: center; margin-top: 3em; padding-bottom: 20px; font-size: 0.9em; padding-top: 3em; background-color: rgba(233, 230, 218, 0.9); overflow: hidden; box-shadow: 0 2px 4px #bbbbbb inset; }
 #footer section { float: left; }
 #footer nav { float: right; }
 #footer nav ul { list-style: none; margin: 0; }
