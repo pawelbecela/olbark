@@ -6,7 +6,10 @@ require 'pony'
 
 class App < Sinatra::Base
   register Sinatra::Partial
-  
+
+  configure :production do
+    require 'newrelic_rpm'
+  end
   # enable :sessions
   #   use Rack::Flash, :sweep => true
 
@@ -24,7 +27,7 @@ class App < Sinatra::Base
   get '/' do
     haml :index
   end
-  
+
   get '/onas' do
     haml :_onas
   end
@@ -32,16 +35,16 @@ class App < Sinatra::Base
   get '/oferta' do
     haml :_oferta
   end
-  
+
   get '/kontakt' do
     haml :_kontakt
   end
-  
+
   get '/' do
     erb :layout
   end
-  
-  post '/' do  
+
+  post '/' do
     Pony.mail({
       :to => 'arkadiusz.olborski.olbark@gmail.com',
       :body => "Wiadomosc od: #{params[:email]}, o tresci: #{params[:body]}. Telefon: #{params[:phone]}",
