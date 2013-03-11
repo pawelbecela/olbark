@@ -44,6 +44,18 @@ class App < Sinatra::Base
     erb :layout
   end
 
+  get '/sitemap.xml' do
+    map = XmlSitemap::Map.new('domain.com') do |m|
+      m.add(:url => '/')
+      m.add(:url => '/onas')
+      m.add(:url => '/oferta')
+      m.add(:url => '/kontakt')
+    end
+
+    headers['Content-Type'] = 'text/xml'
+    map.render
+  end
+
   post '/' do
     Pony.mail({
       :to => 'arkadiusz.olborski.olbark@gmail.com',
