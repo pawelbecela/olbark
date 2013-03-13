@@ -3,6 +3,7 @@ require 'sinatra/base'
 require 'haml'
 require 'rubygems'
 require 'pony'
+require 'xml-sitemap'
 
 class App < Sinatra::Base
   register Sinatra::Partial
@@ -45,7 +46,7 @@ class App < Sinatra::Base
   end
 
   get '/sitemap.xml' do
-    map = XmlSitemap::Map.new('domain.com') do |m|
+    map = ::XmlSitemap::Map.new('olbark.pl') do |m|
       m.add(:url => '/')
       m.add(:url => '/onas')
       m.add(:url => '/oferta')
