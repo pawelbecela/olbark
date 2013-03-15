@@ -23,6 +23,13 @@ class App < Sinatra::Base
     # def flash_types
     #     [:success, :notice, :warning, :error]
     #   end
+    def content_for(key, &block)
+      @content ||= {}
+      @content[key] = capture_haml(&block)
+    end
+    def content(key)
+      @content && @content[key]
+    end
   end
 
   get '/' do
