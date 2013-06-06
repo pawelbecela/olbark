@@ -1,8 +1,8 @@
-body { background-image: url(/images/index1.jpg); font-family: "Courier"; }
+body { background-image: url(/images/index1.jpg); font-family: Helvetica, Arial, Sans-serif !important; }
 
 a { text-decoration: none; }
 
-p { font-family: "Courier"; }
+p { font-family: Helvetica, Arial, Sans-serif; }
 
 h2, h3 { font-weight: normal; }
 
@@ -16,7 +16,7 @@ li { margin-bottom: 10px; }
 
 li textarea { resize: none; }
 
-p#quote { font-weight: bold; font-style: italic; font-size: 33px; font-family: "Courier"; text-align: center; color: #303413; margin-bottom: 50px; }
+p#quote { font-weight: bold; font-style: italic; font-size: 33px; font-family: Helvetica, Arial, Sans-serif; text-align: center; color: #303413; margin-bottom: 50px; }
 
 .footer { text-align: center; margin-bottom: 20px; }
 .footer h2 { font-size: 60px; }
@@ -35,7 +35,7 @@ img, #feedback, #banner, #intro li { border-radius: 3px; }
 #header { text-decoration: none; padding-top: 30px; margin-bottom: 0.6em; }
 #header h1 { float: left; font-size: 32px; margin-top: 1px; margin-bottom: 0; color: rgba(0, 0, 0, 0.8); }
 #header nav { margin-top: 70px; float: right; }
-#header nav ul { margin: 0; list-style: none; overflow: hidden; text-transform: uppercase; font-family: "Courier"; font-size: 32px; }
+#header nav ul { margin: 0; list-style: none; overflow: hidden; text-transform: uppercase; font-family: Helvetica, Arial, Sans-serif; font-size: 32px; }
 #header nav ul li { float: left; margin-left: 2em; }
 #header nav ul li a { text-decoration: none; color: black; color: rgba(0, 0, 0, 0.8); }
 
